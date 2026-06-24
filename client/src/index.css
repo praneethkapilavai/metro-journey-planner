@@ -1,0 +1,40 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --blue:   #0057B8;
+  --blue-light: #3380cc;
+  --red:    #E8192C;
+  --green:  #00843D;
+  --bg:     #0A0E1A;
+  --surface:#12182B;
+  --surface2:#1A2238;
+  --border: #2A3450;
+  --text:   #E8ECF4;
+  --muted:  #7A89A8;
+  --accent: #FFD100;
+  --radius: 12px;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+html { font-size: 16px; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+button { cursor: pointer; font-family: inherit; }
+select, input { font-family: inherit; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+/* line badge colours */
+.line-blue   { background: var(--blue);  color: #fff; }
+.line-red    { background: var(--red);   color: #fff; }
+.line-green  { background: var(--green); color: #fff; }
