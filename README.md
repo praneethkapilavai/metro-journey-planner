@@ -38,7 +38,7 @@ Built with the MERN stack: **MongoDB · Express · React · Node.js**
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/metro-mern.git
+git clone https://github.com/praneethkapilavai/metro-journey-planner
 cd metro-mern
 
 # Install server dependencies
@@ -55,14 +55,17 @@ cd server
 cp .env.example .env
 ```
 
-Open `.env` and set your MongoDB connection string:
+Open `server/.env` and set your MongoDB connection string:
 
 ```env
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/metro_journey_planner
+MONGO_URI="your-mongodb-connection-string-here"
 ```
 
-For MongoDB Atlas, use your Atlas connection string instead.
+- `server/.env` is for your local secrets only and is ignored by Git.
+- `server/.env.example` is safe to commit and share because it contains placeholder values.
+
+For MongoDB Atlas, replace the placeholder with your Atlas connection string.
 
 ### Seed the Database
 
